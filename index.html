@@ -1,0 +1,41 @@
+<!DOCTYPE html><html><head>
+    <script src="firebase-app.js"></script>
+    <script src="firebase-firestore.js"></script>
+    <script src="firebase-auth.js"></script>
+    <script src="p5.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&amp;display=swap" rel="stylesheet">
+    <script src="p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+    <h1>BUCKETS</h1>
+    <div id="sketch-holder">
+    </div>
+    <form id="score" action="javascript:void(0);">
+      <label id="best">High Score: 0</label>
+      <input type="text" id="name" placeholder="name / initials" required="">
+      <input type="submit" onclick="submitScore()">
+    </form>
+    <div id="leaderboard">
+      <div id="leader-container">
+        <h2>LEADERBOARD</h2>
+        <table id="leader">
+          <tbody><tr>
+            <th>RANK</th>
+            <th>PLAYER</th>
+            <th>SCORE</th>
+          </tr>
+        </tbody></table>
+      </div>
+    </div>
+    <hr>
+    <div id="footer">
+      <a href="https://rjgport.com/" target="_blank">RJGport.com</a>
+    </div>
+    <script src="sketch.js"></script>
+    <script type="application/ld+json">{</script></body></html>
